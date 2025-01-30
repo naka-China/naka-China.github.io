@@ -1,346 +1,195 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="zh-CN">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <head>
-	<meta charset="utf-8">
-	<title>小马宝莉抽抽乐~~😘</title>
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<meta name="keywords" content="">
-	<!-- Google Fonts -->
-	<link href="static/css/css2.css" rel="stylesheet">
-	<!-- Favicon -->
-	
-	<!-- Site All Style Sheet Css -->
-	<link href="static/css/bootstrap.min.css" rel="stylesheet">
-	<link href="static/css/font-awesome.min.css" rel="stylesheet">
-	<link href="static/css/themify-icons.css" rel="stylesheet">
-	<link href="static/css/magnific-popup.css" rel="stylesheet">
-	<link href="static/css/animate.min.css" rel="stylesheet">
-	<link href="static/css/owl.carousel.min.css" rel="stylesheet">
-	<link href="static/css/owl.theme.default.min.css" rel="stylesheet">
-	<!-- Site Main Style Sheet Css -->
-	<link href="static/css/style.css" rel="stylesheet">
-	<link href="static/css/responsive.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025新年快乐</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(45deg, #0b0b2a, #1a1a4a);
+            overflow: hidden;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .countdown {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 0 20px rgba(255, 223, 0, 0.8);
+        }
+
+        h1 {
+            font-size: 5em;
+            margin-bottom: 30px;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        .timer {
+            display: flex;
+            gap: 40px;
+            font-size: 2.5em;
+        }
+
+        .timer-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 223, 0, 0.3);
+        }
+
+        .message {
+            margin-top: 50px;
+            font-size: 2em;
+            opacity: 0;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { filter: drop-shadow(0 0 10px #ffdf00); }
+            50% { filter: drop-shadow(0 0 30px #ffdf00); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
 </head>
-
 <body>
-	<!-- Start Preloader Area -->
-	<div class="preloader">
-		<div class="preloader-inner">
-			<span></span>
-			<span></span>
-		</div>
-	</div>
-	<!-- End Preloader Area -->
-    <!-- Start Header Navbar Area -->
-    <header class="header-navber-area">
-        <nav class="navbar navbar-b navbar-trans navbar-expand-lg" id="mainNav">
-            <div class="container">
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-				<span></span>
-				<span></span>
-				<span></span> 
-			</button>
-                <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-					<ul class="navbar-nav">
-						<li class="nav-item"><a class="nav-link js-scroll active" href="#home">主页</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll" href="#review">客户评论</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll" href="#contact">抽卡方式</a></li>
-					</ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- End Header Navbar Area -->
-	
-	<!-- Start Home Section -->
-	<section id="home" class="home-area hero-equal-height section-padding">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-8 offset-lg-2 col-md-12">
-					<div class="home-content z-index position-relative">
-						<h3>小马宝莉抽抽乐~~😘</h3>
-						<h1>小马宝莉抽抽乐，2c一抽~~</h1>
-						<p>请同意抽抽乐须知后再抽~~</p>
-						<p>不要过度消费哦~</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Home Section -->
-	<!-- Mini Feature Section Start -->
-	<section id="mini-feature" class="mini-feature-area bg-gray pt-70 pb-100">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="single-mini-feature">
-						<div class="mini-feature-icon">	<i class="ti-stats-up"></i>
-						</div>
-						<div class="mini-feature-info">
-							<h6>概率公平</h6>
-							<p>Probabilistic fairness</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="single-mini-feature">
-						<div class="mini-feature-icon">	<i class="ti-user"></i>
-						</div>
-						<div class="mini-feature-info">
-							<h6>人数众多</h6>
-							<p>A lot of people</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="single-mini-feature">
-						<div class="mini-feature-icon">	<i class="ti-game"></i>
-						</div>
-						<div class="mini-feature-info">
-							<h6>制度公平</h6>
-							<p>Institutional fairness</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="single-mini-feature">
-						<div class="mini-feature-icon">	<i class="ti-money"></i>
-						</div>
-						<div class="mini-feature-info">
-							<h6>价格合理</h6>
-							<p>Price is reasonable</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Mini Feature Section End -->
+    <div class="container">
+        <canvas id="canvas"></canvas>
+        <div class="countdown">
+            <h1>2025</h1>
+            <div class="timer" id="timer"></div>
+            <div class="message">新年快乐 · 万事如意</div>
+        </div>
+    </div>
 
-		<!-- Start Testimonials Section -->
-	<section id="review" class="testimonial-area section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title">
-						<h2>客户评论</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="testimonial-slide">
-						<div class="owl-carousel owl-theme">
-							<!-- testimonials item -->
-							<div class="single-testimonial">
-								<div class="testimonial-content-inner">
-									<div class="testimonial-text">
-										<p>这家很实诚，在这里买过好几次了，推荐。</p>
-										<div class="rating-box">
-											<ul>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<h6>“小红书”</h6>
-										</div>
-									</div>
-									<div class="author-info-box">
-										<div class="author-bio-info">
-											<h3>“匿名客户”</h3>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- testimonials item -->
-							<div class="single-testimonial">
-								<div class="testimonial-content-inner">
-									<div class="testimonial-text">
-										<p>第一次用的时候感觉跟其它的没啥区别，现在才发现区别所在。</p>
-										<div class="rating-box">
-											<ul>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<h6>“好友介绍”</h6>
-										</div>
-									</div>
-									<div class="author-info-box">
-										<div class="author-bio-info">
-											<h3>“无吉无言”</h3>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- testimonials item -->
-							<div class="single-testimonial">
-								<div class="testimonial-content-inner">
-									<div class="testimonial-text">
-										<p>概率也很公平，2发就抽中了，其他的不用多说。</p>
-										<div class="rating-box">
-											<ul>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<h6>“小红书”</h6>
-										</div>
-									</div>
-									<div class="author-info-box">
-										<div class="author-bio-info">
-											<h3>“开朗的网友”</h3>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- testimonials item -->
-							<div class="single-testimonial">
-								<div class="testimonial-content-inner">
-									<div class="testimonial-text">
-										<p>我真的爱了，试一试就知道了，推荐。</p>
-										<div class="rating-box">
-											<ul>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<h6>“抖音”</h6>
-										</div>
-									</div>
-									<div class="author-info-box">
-										<div class="author-bio-info">
-											<h3>“不愿透露姓名的网友”</h3>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Testimonials Section -->
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
 
-	<!-- Start Counter Section -->
-	<section class="counter-area section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6 counter-item">
-					<div class="single-counter">
-						<div class="counter-contents">
-							<h2>
-								<span class="counter-number">2</span>
-								<span>+</span>
-							</h2>
-							<h3 class="counter-heading">成立年数</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 counter-item">
-					<div class="single-counter">
-						<div class="counter-contents">
-							<h2>
-								<span class="counter-number">2000</span>
-								<span>+</span>
-							</h2>
-							<h3 class="counter-heading">成交量</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 counter-item">
-					<div class="single-counter">
-						<div class="counter-contents">
-							<h2>
-								<span class="counter-number">1600</span>
-								<span>+</span>
-							</h2>
-							<h3 class="counter-heading">客户满意单</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 counter-item">
-					<div class="single-counter">
-						<div class="counter-contents">
-							<h2>
-								<span class="counter-number">1800</span>
-								<span>+</span>
-							</h2>
-							<h3 class="counter-heading">回头客</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Counter Section -->
+        // 设置画布尺寸
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
 
-	<!-- Start Contact Section -->
-	<section id="contact" class="contact-area section-padding">
-		<div class="container">
-			<div>
-				<style>
-					div{
-						width: 100%;
-						text-align: center;
-					}
-				</style>
-				<div class="row contact-information">
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="contact-info-title">
-							<div class="section-title">
-								<h2>抽卡方式</h2>
-							</div>
-							<h6>微信:</h6>
-							<p>wxid_doti0n3nk9m522</p>
-							<p>PS:目前账号就这一个，后面会增加的~~😘</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Contact Section -->
+        // 粒子类
+        class Particle {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.size = Math.random() * 3 + 1;
+                this.speedX = Math.random() * 3 - 1.5;
+                this.speedY = Math.random() * 3 - 1.5;
+                this.color = `hsl(${Math.random() * 60 + 30}, 100%, 50%)`;
+            }
 
-	<!-- Start Footer Section -->
-	<footer>
-		<div class="footer-bottom-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="footer-copyright text-center">
-							<p>&copy; 2024 naka</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- End Footer Section -->
-	
-	<!-- Start Back to Top -->
-	<div class="back-to-top">
-		<i class="fa fa-caret-up"></i><i class="fa fa-caret-up"></i>
-	</div>
-	<!-- End Back to Top -->
-	
-	<!-- Site All Jquery Js -->
-	<script src="static/js/jquery-3.6.0.min.js"></script>
-	<script src="static/js/bootstrap.min.js"></script>
-	<script src="static/js/plugins.js"></script>
-	<!--Site Main Custom Js-->
-	<script src="static/js/main.js"></script>
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.size > 0.2) this.size -= 0.05;
+            }
+
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        // 创建烟花粒子
+        function createParticles(x, y) {
+            for (let i = 0; i < 50; i++) {
+                particles.push(new Particle(x, y));
+            }
+        }
+
+        // 动画循环
+        function animate() {
+            ctx.fillStyle = 'rgba(11, 11, 42, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            particles.forEach((particle, index) => {
+                particle.update();
+                particle.draw();
+                if (particle.size <= 0.2) {
+                    particles.splice(index, 1);
+                }
+            });
+
+            // 随机生成烟花
+            if (Math.random() < 0.05) {
+                createParticles(
+                    Math.random() * canvas.width,
+                    Math.random() * canvas.height
+                );
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        // 倒计时功能
+        function updateTimer() {
+            const target = new Date('2025-01-01T00:00:00');
+            const now = new Date();
+            const diff = target - now;
+
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById('timer').innerHTML = `
+                    <div class="timer-item">${days}天</div>
+                    <div class="timer-item">${hours}时</div>
+                    <div class="timer-item">${minutes}分</div>
+                    <div class="timer-item">${seconds}秒</div>
+                `;
+            } else {
+                document.getElementById('timer').innerHTML = '<div class="timer-item">新年快乐！</div>';
+            }
+        }
+
+        // 启动动画和倒计时
+        animate();
+        setInterval(updateTimer, 1000);
+        updateTimer();
+	// 5秒后跳转到祝福页面
+	setTimeout(() => {
+    		window.location.href = 'blessing.html';
+	}, 5000);
+    </script>
 </body>
-
 </html>

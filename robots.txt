@@ -1,9 +1,0 @@
-Robot-version: Version 1.0
-User-agent:
-Disallow:
-User-agent: Googlebot-Mobile
-Disallow: /
-User-agent: Googlebot
-Disallow: /
-User-agent: Google
-Disallow: /
